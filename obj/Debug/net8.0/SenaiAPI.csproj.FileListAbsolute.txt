@@ -107,3 +107,10 @@ C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\bin\Debug\net8.0\zh-Hans\Mi
 C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\obj\Debug\net8.0\SenaiAPI.csproj.AssemblyReference.cache
 C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\obj\Debug\net8.0\SenaiAPI.csproj.Up2Date
+C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\obj\Debug\net8.0\SenaiAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\obj\Debug\net8.0\SenaiAPI.sourcelink.json
+C:\Users\matheus_h_da-rosa\source\repos\Api\SenaiAPI\bin\Debug\net8.0\AutoMapper.dll
