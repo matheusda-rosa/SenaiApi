@@ -1,10 +1,13 @@
-﻿using SenaiAPI.Entidades;
+﻿using SenaiAPI.DTos;
+using SenaiAPI.Entidades;
 
 namespace SenaiAPI.Repositorios.Interfaces
 {
     public interface IEscolaRepository
     {
-        List<Escola> PegarTodos();
         void Salvar(Escola escola);
+        Task<bool> Delete(long Id);
+        Escola ObterPorId(long Id);
+        List<Escola> PegarTodos();
     }
 }

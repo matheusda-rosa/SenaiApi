@@ -26,5 +26,20 @@ namespace SenaiAPI.Servicos
             var escolas = _escolaRepository.PegarTodos();
             return _mapper.Map<List<EscolaDTo>>(escolas);
         }
+        public async Task<bool> Delete(long Id)
+        {
+            return await _escolaRepository.Delete(Id);
+        }
+        public void Editar(EscolaEdicaoDTo model)
+        {
+            var escola = _escolaRepository.ObterPorId(model.Id);
+            _mapper.Map(model, escola);
+
+            _escolaRepository.Salvar(escola);
+        }
+        public Escola ObterPorId(long id)
+        {
+            return _escolaRepository.ObterPorId(id);
+        }
     }
 }

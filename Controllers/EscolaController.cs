@@ -15,21 +15,36 @@ namespace SenaiAPI.Controllers
         {
             _escolaService = escolaService;
         }
-        [HttpGet]
-        public IActionResult Index()
-        {
-            return Ok();
-        }
+
         [HttpPost]
-        public IActionResult Adicionar(EscolaDTo escola)
+        public IActionResult Salvar([FromBody] EscolaDTo escola)
         {
-            _escolaService.Salvar(escola);
-            return Ok();
+            if (escola == null)
+            
+                 return BadRequest("Escola não pode ser nula");
+             _escolaService.Salvar(escola);
+             return Ok();
+            
         }
+
         [HttpGet("buscar-todos")]
         public IActionResult Buscar()
         {
             var escolas = _escolaService.BuscarTodos();
+            return Ok(escolas);
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(long Id)
+        {
+            await _escolaService.Delete(Id);
+            return Ok();
+        }
+
+        [HttpGet("PegarPorId")]
+        public IActionResult PegarPorId(long id)
+        {
+            var escolas = _escolaService.ObterPorId(id);
             return Ok(escolas);
         }
     }
