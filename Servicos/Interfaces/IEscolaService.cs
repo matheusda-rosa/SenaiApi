@@ -9,7 +9,7 @@ namespace SenaiAPI.Servicos.Interfaces
         List<EscolaDTo> BuscarTodos();
         Task<bool> Delete(long Id);
         void Editar(EscolaEdicaoDTo escola);
-        public Escola ObterPorId(long id);
+        public EscolaDTo ObterPorId(long id);
         public void Salvar(EscolaDTo escolaDTo);
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SenaiAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ce515216d9a9963185127bb3dfe80b76cb09217")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e5f1fd9947c468d9d0185e863dc830c239fb3c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("SenaiAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SenaiAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

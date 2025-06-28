@@ -19,10 +19,9 @@ namespace SenaiAPI.Repositorios
             base.Salvar(escola);
         }
         public List<Escola> PegarTodos()
-        {
+            {
             return base.PegarTodos()
                 .Include(c => c.Endereco)
-                .Include(c => c.Professores)
                 .ToList();
         }
         public async Task<bool> Delete(long Id)
@@ -32,7 +31,7 @@ namespace SenaiAPI.Repositorios
 
         public Escola ObterPorId(long Id)
         {
-            return base.ObterPorId(Id);
+            return _context.Escola.Include(c => c.Endereco).FirstOrDefault(c => c.Id == Id);
         }
     }
 }
